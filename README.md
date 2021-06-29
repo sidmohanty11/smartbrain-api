@@ -1,12 +1,13 @@
-# SmartBrain-api - v2
-Final project for ZTM course
+# SmartBrain-api
+For development use,
 
 1. Clone this repo
-2. Run `npm install`
-3. Run `npm start`
-4. You must add your own API key in the `controllers/image.js` file to connect to Clarifai API
-5. Add your own database credentials to `server.js` line 12
+2. ```cd smartbrain-api```
+3. Add a .env file with your own Clarifai api and JWT_SECRET
+4. Make sure you are running docker in the background
+5. Run ```docker-compose up --build```
+6. To access backend's bash run, ```docker-compose exec smartbrain-api bash```
+7. To access redis run, ```docker-compose exec redis redis-cli```
+8. To access postgres run, ```psql postgres://<username>:<password>@localhost:5432/smartbrain-docker```
 
 You can grab Clarifai API key [here](https://www.clarifai.com/)
-
-** Make sure you use postgreSQL instead of mySQL for this code base.
